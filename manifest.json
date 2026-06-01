@@ -2,7 +2,7 @@
   "name": "XingSi",
   "short_name": "行思",
   "description": "非共识，窄切口，深论证",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#0d0d0d",
   "theme_color": "#0d0d0d",
