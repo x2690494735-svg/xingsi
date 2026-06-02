@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<title>信息聚合日报 — 2026年6月2日星期二</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #08080a; --surface: rgba(255,255,255,0.025);
+  --border: rgba(255,255,255,0.05); --text: #b0adA5;
+  --muted: #5a5750; --gold: #c4a35a; --warm: #c08540;
+  --radius: 14px; --font: 'Noto Serif SC', serif;
+}
+* { margin:0;padding:0;box-sizing:border-box }
+html { scroll-behavior:smooth }
+body {
+  background: var(--bg); color: var(--text);
+  font-family: var(--font); font-weight: 300;
+  line-height: 1.75; min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* grain */
+body::before {
+  content: ''; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+/* ambient light */
+body::after {
+  content: ''; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 600px 400px at 15% 10%, rgba(196,163,90,0.05) 0%, transparent 70%),
+    radial-gradient(ellipse 400px 500px at 85% 70%, rgba(192,133,64,0.04) 0%, transparent 60%);
+}
+
+.wrap { max-width: 680px; margin: 0 auto; padding: 48px 20px 80px; position: relative; z-index: 1 }
+
+/* header */
+.masthead { text-align: center; padding: 40px 0 24px }
+.masthead .d { font-size: 11px; color: var(--muted); letter-spacing: 4px; text-transform: uppercase; margin-bottom: 10px }
+.masthead h1 { font-size: 28px; font-weight: 600; color: #d8d0c0; letter-spacing: 3px }
+.masthead .hr { width: 36px;height:1px;background:var(--gold);margin: 14px auto 0;opacity:0.4 }
+
+/* stats bento */
+.stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 6px; margin-bottom: 36px }
+.stats .box {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 18px 12px; text-align: center;
+  transition: border-color 0.5s, background 0.5s;
+}
+.stats .box:hover { border-color: rgba(196,163,90,0.2); background: rgba(255,255,255,0.04) }
+.stats .n { font-size: 26px; font-weight: 700; color: #cfc4a5; line-height: 1 }
+.stats .l { font-size: 10px; color: var(--muted); margin-top: 6px; letter-spacing: 1px }
+
+/* section title */
+.sec-t { font-size: 15px; font-weight: 600; color: #b8ae90; margin: 32px 0 14px; padding-bottom: 6px; border-bottom: 1px solid rgba(255,255,255,0.04); letter-spacing: 2px }
+
+/* cards */
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 18px 20px; margin-bottom: 8px;
+  animation: fadeUp 0.6s ease-out both;
+  animation-delay: calc(var(--i,0) * 0.08s);
+  transition: border-color 0.4s, background 0.4s, transform 0.3s;
+}
+.card:hover { border-color: rgba(255,255,255,0.1); background: rgba(255,255,255,0.035); transform: translateY(-1px) }
+.card p { font-size: 14px; color: #b0adA5; line-height: 1.8 }
+.card p strong { color: var(--gold); font-weight: 600 }
+.card.trend { border-left: 2px solid var(--gold) }
+.card.authority { border-left: 2px solid var(--warm) }
+.card.gold { border-left: 2px solid rgba(180,160,120,0.5) }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px) }
+  to { opacity: 1; transform: translateY(0) }
+}
+
+/* footer */
+.foot { text-align: center; margin-top: 52px; font-size: 10px; color: var(--muted); letter-spacing: 3px }
+.foot span { color: var(--gold) }
+
+@media (max-width:480px) {
+  .wrap { padding: 28px 14px 60px }
+  .masthead h1 { font-size: 22px }
+  .stats .n { font-size: 20px }
+}
+</style></head>
+<body>
+<div class="wrap">
+<header class="masthead"><div class="d">2026年6月2日星期二</div><h1>信息聚合日报</h1><div class="hr"></div></header>
+
+<div class="stats">
+  <div class="box"><div class="n">2</div><div class="l">权威声音</div></div>
+  <div class="box"><div class="n">3</div><div class="l">AI 趋势</div></div>
+  <div class="box"><div class="n">0</div><div class="l">对话淘金</div></div>
+</div>
+
+<div class="sec-t">权威声音</div><article class="card authority" style="--i:0"><p><strong>国家网信办等《人工智能生成合成内容标识办法》（2025年3月正式发布，9月施行）与配套国标</strong>  </p></article><article class="card authority" style="--i:1"><p>所有AI生成的文本、图像、视频必须有显式标识和不可篡改的元数据，平台须在传播中保留标识，并建立“检测—拦截—追溯”机制。  </p></article><article class="card authority" style="--i:2"><p>对你意味着：过去靠“AI洗稿-批量分发”赚流量补贴的模式进入死亡倒计时。平台为避免连带责任，会主动对无标识内容限流、下架，深度伪造检测将成为内容审核的刚需。隐藏机会在于标识合规SaaS、AI内容溯源API以及为中小企业提供“标识嵌入”工具，而试图做“去标识”工具或个人代删标识则属于红线，会被追责。</p></article><article class="card authority" style="--i:3"><p><strong>国家网信办《个人信息保护合规审计管理办法》（2025年2月发布，5月施行）</strong>  </p></article><article class="card authority" style="--i:4"><p>处理个人信息的平台和AI企业须定期委托专业机构开展合规审计，尤其是自动化决策、用户画像和模型训练环节，未完成审计或审计不合规将面临罚款与业务限制。  </p></article><article class="card authority" style="--i:5"><p>对你意味着：大模型训练数据的“草莽时代”正式终结。自由职业者接数据标注、语料清洗等订单时，必须核查委托方的数据来源授权，否则可能被卷入合规连带。同时，侧重AI场景的合规审计师、数据合规律师以及自动化审计工具会成为新的高价值赛道，提前入场有先手优势。</p></article>
+<div class="sec-t">AI 趋势观察</div><article class="card trend" style="--i:0"><p>1. <strong>模型水印与溯源技术的工程化</strong></p></article><article class="card trend" style="--i:1"><p>   当模型生成的文本、代码、图像海量涌入真实世界，区分人机内容已成为数字基础设施级问题。这不仅是学术议题，更直接关系到版权认证、虚假信息追溯和平台信任体系重建。对普通人而言，未来你阅读的每条新闻、看到的每张图片是否自带“数字血统”证明，将根本上改变你消费信息的方式。</p></article><article class="card trend" style="--i:2"><p>2. <strong>非生产性环境中的AI闭环养成</strong></p></article><article class="card trend" style="--i:3"><p>   过去我们关注AI提升工作效率，但被低估的是AI在“过程陪伴”中形成的隐性影响——比如代码助手如何塑造编程思维，写作助手如何改变语言习惯。这种潜移默化的能力驯化，比工具提效更深远，因为它正在重新定义人类技能的自然演化路径。普通人可能在不知不觉中丧失某些基础判断力，转而依赖模型的“品味”。</p></article><article class="card trend" style="--i:4"><p>3. <strong>模型能力自评与主动弃权机制</strong></p></article><article class="card trend" style="--i:5"><p>   当通用模型被用于高可靠性场景，模型能否诚实地说“我不知道”或拒绝超出能力边界的问题，成为一种稀缺的安全特性，而非模型缺陷。这涉及到风险评估的前置化和自动化，能预防因模型强行输出导致的灾难性错误。普通人接触到的AI服务将变得更“谦虚”，但同时也更可信——你会慢慢习惯一个敢于承认无知的AI，而不是永远胸有成竹的错觉制造者。</p></article>
+
+
+<footer class="foot"><span>//</span> 每日自动生成</footer>
+</div></body></html>
