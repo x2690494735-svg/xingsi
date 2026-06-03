@@ -1,57 +1,48 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
-<title>晨报 — 2026年6月2日星期二</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>日报存档</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{
-  background:#faf8f5;color:#2c2c2c;
-  font-family:'Noto Serif SC',serif;font-weight:400;
-  line-height:1.8;-webkit-font-smoothing:antialiased
-}
-.paper{max-width:620px;margin:0 auto;padding:48px 24px 72px}
-
-/* header — newspaper masthead */
+body{background:#faf8f5;color:#2c2c2c;font-family:'Noto Serif SC',serif;line-height:1.8;min-height:100vh}
+.paper{max-width:680px;margin:0 auto;padding:48px 24px 72px}
 .mh{border-bottom:2px solid #2c2c2c;padding-bottom:20px;margin-bottom:36px}
 .mh .d{font-size:12px;color:#999;letter-spacing:2px}
-.mh h1{font-size:26px;font-weight:700;color:#1a1a1a;margin-top:6px;letter-spacing:1px}
-
-/* stat line */
-.sl{display:flex;gap:32px;margin-bottom:40px;font-size:13px;color:#888;letter-spacing:1px}
-.sl b{color:#1a1a1a;font-weight:600;margin-right:4px}
-
-/* section */
-.sec{margin-bottom:36px}
-.sec-t{font-size:15px;font-weight:600;color:#1a1a1a;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #e8e4de;letter-spacing:1px}
-
-/* items */
-.item{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid #f0ece6}
-.item:last-child{border-bottom:none}
-.item .dot{width:8px;height:8px;border-radius:50%;background:#d4a853;flex-shrink:0;margin-top:9px}
-.item .dot.warm{background:#c47040}
-.item .dot.soft{background:#b0a080}
-.item p{font-size:14px;color:#3a3a3a;line-height:1.85}
-.item p b{color:#1a1a1a;font-weight:600}
-
-.foot{text-align:center;margin-top:52px;font-size:11px;color:#bab6af;letter-spacing:2px}
-
+.mh h1{font-size:26px;font-weight:700;color:#1a1a1a;margin-top:6px}
+.row{display:grid;grid-template-columns:110px 1fr 180px;gap:16px;padding:16px 0;border-bottom:1px solid #e8e4de;text-decoration:none;color:inherit;align-items:center;transition:background .15s}
+.row:hover{background:#fffbf5;margin:0 -12px;padding:16px 12px;border-radius:6px}
+.row.today{background:#fff9ed;margin:0 -12px;padding:16px 12px;border-radius:6px;border-bottom:2px solid #d4a853}
+.date{font-size:13px;color:#999;font-weight:500;white-space:nowrap}
+.head{font-size:15px;color:#1a1a1a;font-weight:500}
+.stat{font-size:12px;color:#bbb;text-align:right;line-height:1.5}
+.today .date{color:#b8860b}.today .head{font-weight:600}
+.foot{text-align:center;margin-top:48px;font-size:11px;color:#bab6af;letter-spacing:2px}
+.empty{text-align:center;padding:80px 0;color:#ccc;font-size:14px}
 @media(max-width:480px){
   .paper{padding:28px 14px 56px}
-  .mh h1{font-size:20px}
-  .sl{gap:16px;font-size:11px}
+  .row{grid-template-columns:90px 1fr;gap:8px}
+  .stat{display:none}
 }
 </style></head>
 <body>
 <div class="paper">
-<header class="mh"><div class="d">2026年6月2日星期二</div><h1>晨报</h1></header>
-
-<div class="sl"><span><b>3</b> 权威声音</span><span><b>3</b> AI 趋势</span><span><b>0</b> 对话淘金</span></div>
-
-<section class="sec"><div class="sec-t">权威声音</div><div class="item"><span class="dot warm"></span><p><b>来源/主题</b>：国家网信办等发布《人工智能生成合成内容标识方法》（强制性国标，2025年9月起实施）  </p></div><div class="item"><span class="dot warm"></span><p>核心内容：所有AI生成合成的文字、图像、音视频必须添加显式或隐式标识，且标识不可篡改、易于感知。  </p></div><div class="item"><span class="dot warm"></span><p>对你意味着什么：内容平台的推荐逻辑将发生隐性重构——纯AI批量洗稿、低成本流水线内容会因强制标识而被算法判定为“低可信度”，流量断崖式下跌。同时，“人机协作”型创作出现制度性红利：能证明内容经过人类深度干预、混合编排的创作者，在商业报价和平台权重上将获得类“原创认证”的溢价。对AI工具开发者，这不是合规成本，而是新基建：围绕标识的生成前检测、生成中嵌入、发布后审查工具链会爆发一批小众刚需付费服务。</p></div><div class="item"><span class="dot warm"></span><p><b>来源/主题</b>：国务院常务会议审议通过《关于促进平台经济规范健康发展的指导意见》（近期公开版本）  </p></div><div class="item"><span class="dot warm"></span><p>核心内容：要求平台不得滥用市场支配地位挤压中小经营者，明确降低平台内商户不合理负担，鼓励平台向中小创业者开放数据、流量、工具等生态资源。  </p></div><div class="item"><span class="dot warm"></span><p>对你意味着什么：表面是给大厂念紧箍咒，实际释放了一个结构性的“平台红利再分配”信号。过去依附超级平台的小创业者，靠钻算法空子获利的路径会被堵死，但平台在政策压力下会主动切出更多垂类扶持入口（如本地服务、知识付费、细分供应链），转移支付给合规的中小账号。你的机会不在“做大号”，而在成为平台在某一合规赛道主动邀约的“生态标杆”——越早用平台官推的工具（如官方剪辑、合规交易链路）完成全链路跑通，越容易拿到冷启动期的免费流量包。</p></div><div class="item"><span class="dot warm"></span><p><b>来源/主题</b>：国家数据局等多部门联合推进“数据要素×”三年行动计划，聚焦个人数据授权运营试点  </p></div><div class="item"><span class="dot warm"></span><p>核心内容：在医疗健康、金融、交通等领域，探索个人数据由本人授权给第三方合规使用的模式，建立“个人数据资产账户”。  </p></div><div class="item"><span class="dot warm"></span><p>对你意味着什么：对自由职业者和个人创业者，你的行为数据、技能评价、交易记录会逐步变成可授权、可交易的私有资产，而不是平台独占的原材料。这会催生新中介角色：帮个人包装、管理、议价“数据资产包”的服务商，以及基于合规授权链的精准获客模式（比如你授权自己的学习记录给知识付费平台换取独家折扣，平台再精准推课）。提前在多个平台主动建立“实名+专业行为轨迹”的强数据账本，相当于在开一座未来能直接变现的数字矿。</p></div></section>
-<section class="sec"><div class="sec-t">AI 趋势观察</div><div class="item"><span class="dot"></span><p><b>方向一：端侧AI的静默实用化</b>  </p></div><div class="item"><span class="dot"></span><p>当舆论焦点仍缠斗在万亿参数云端模型时，能在普通手机、笔记本上流畅运行的数十亿参数模型已悄然达到实用阈值。这不仅是技术瘦身，更是交互范式的转移——AI将不再依赖网络、不再上传隐私数据，成为真正的个人计算基座。对普通人的直接影响是：离线实时翻译、本地文档摘要、无网环境下的代码助手等，将像呼吸一样自然，而对云服务的订阅依赖可能出现裂痕。</p></div><div class="item"><span class="dot"></span><p><b>方向二：模型退化与合成数据陷阱</b>  </p></div><div class="item"><span class="dot"></span><p>当全网都在用AI生成的内容喂养下一代AI时，一个被低估的风险正在成形：模型自噬循环。已有研究证实，过度依赖合成数据训练会导致模型丧失统计尾部多样性，出现“认知返祖”。这并非危言，而是许多低成本微调方案无意中踩入的暗坑。对普通用户来说，长期后果是某些AI产品的“智商”可能停滞甚至倒退，今日智能的回答明天可能变得平庸，免费模型的黄金窗口期或许比想象中短。</p></div><div class="item"><span class="dot"></span><p><b>方向三：AI for Science 的平台化——从“发现”到“产出”</b>  </p></div><div class="item"><span class="dot"></span><p>AlphaFold等单点突破已被热议，但更深层的趋势是AI正在重组整个科学研发流程：不再只是预测一个蛋白质结构，而是进入试剂设计、实验规划、数据闭环分析的工业级平台。这意味着科研机械臂与AI的联动将把试错成本打掉一个数量级。普通人不易察觉，但会通过更快上市的新药、更高效的新能源材料感受到这种“后台加速”——科学响应用户需求的速度，将头一次接近软件迭代的节奏。</p></div></section>
-
-
-<footer class="foot">每日自动生成</footer>
+<header class="mh"><div class="d">3 期</div><h1>日报存档</h1></header>
+<a href="archive/report-2026-06-03.html" class="row today">
+    <span class="date">2026-06-03</span>
+    <span class="head">速览</span>
+    <span class="stat">1 政策风向 2 动态 1 工作笔记</span>
+  </a>
+<a href="archive/report-2026-06-02.html" class="row">
+    <span class="date">2026-06-02</span>
+    <span class="head">晨报</span>
+    <span class="stat">2 权威声音 3 AI 趋势 0 对话淘金</span>
+  </a>
+<a href="archive/report-2026-06-01.html" class="row">
+    <span class="date">2026-06-01</span>
+    <span class="head">信息聚合日报</span>
+    <span class="stat"></span>
+  </a>
+<footer class="foot">每日自动生成 · <a href="today.html" style="color:inherit">今天</a></footer>
 </div></body></html>
