@@ -5,41 +5,93 @@
 <title>日报存档</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#faf8f5;color:#2c2c2c;font-family:"Noto Serif SC",serif;line-height:1.8}
+body{background:#faf8f5;color:#2c2c2c;font-family:'Noto Serif SC',serif;line-height:1.8;min-height:100vh}
 .paper{max-width:680px;margin:0 auto;padding:48px 24px 72px}
 .mh{border-bottom:2px solid #2c2c2c;padding-bottom:20px;margin-bottom:36px}
 .mh .d{font-size:12px;color:#999;letter-spacing:2px}
 .mh h1{font-size:26px;font-weight:700;color:#1a1a1a;margin-top:6px}
-.row{display:grid;grid-template-columns:110px 1fr 180px;gap:16px;padding:16px 0;border-bottom:1px solid #e8e4de;text-decoration:none;color:inherit;align-items:center}
+.row{display:grid;grid-template-columns:110px 1fr 180px;gap:16px;padding:16px 0;border-bottom:1px solid #e8e4de;text-decoration:none;color:inherit;align-items:center;transition:background .15s}
 .row:hover{background:#fffbf5;margin:0 -12px;padding:16px 12px;border-radius:6px}
 .row.today{background:#fff9ed;margin:0 -12px;padding:16px 12px;border-radius:6px;border-bottom:2px solid #d4a853}
-.date{font-size:13px;color:#999}
-.head{font-size:15px;color:#1a1a1a}
-.stat{font-size:12px;color:#bbb;text-align:right}
+.date{font-size:13px;color:#999;font-weight:500;white-space:nowrap}
+.head{font-size:15px;color:#1a1a1a;font-weight:500}
+.stat{font-size:12px;color:#bbb;text-align:right;line-height:1.5}
+.today .date{color:#b8860b}.today .head{font-weight:600}
 .foot{text-align:center;margin-top:48px;font-size:11px;color:#bab6af;letter-spacing:2px}
-@media(max-width:480px){.paper{padding:28px 14px 56px}.row{grid-template-columns:90px 1fr}.stat{display:none}}
+.empty{text-align:center;padding:80px 0;color:#ccc;font-size:14px}
+@media(max-width:480px){
+  .paper{padding:28px 14px 56px}
+  .row{grid-template-columns:90px 1fr;gap:8px}
+  .stat{display:none}
+}
 </style></head>
 <body>
 <div class="paper">
-<header class="mh"><div class="d">19 期</div><h1>日报存档</h1></header>
-<a href="archive/report-2026-06-24.html" class="row today"><span class="date">2026-06-24</span><span class="head">速览</span><span class="stat">0 政策风向 2 人物 2 动态 0 工作笔记</span></a>
-<a href="archive/report-2026-06-23.html" class="row"><span class="date">2026-06-23</span><span class="head">简报</span><span class="stat">0 政策风向 2 人物 2 动态 0 工作笔记</span></a>
-<a href="archive/report-2026-06-19.html" class="row"><span class="date">2026-06-19</span><span class="head">今天做的事</span><span class="stat">1 政策风向 2 人物 2 动态 0 工作笔记</span></a>
-<a href="archive/report-2026-06-18.html" class="row"><span class="date">2026-06-18</span><span class="head">随便看看</span><span class="stat">1 政策风向 2 人物 2 动态 0 工作笔记</span></a>
-<a href="archive/report-2026-06-17.html" class="row"><span class="date">2026-06-17</span><span class="head">速览</span><span class="stat">1 政策风向 2 人物 2 动态 0 工作笔记</span></a>
-<a href="archive/report-2026-06-14.html" class="row"><span class="date">2026-06-14</span><span class="head">晨报</span><span class="stat">1 政策风向 2 人物 2 动态 0 工作笔记</span></a>
-<a href="archive/report-2026-06-13.html" class="row"><span class="date">2026-06-13</span><span class="head">早上好</span><span class="stat">1 政策风向 2 人物 2 动态 0 工作笔记</span></a>
-<a href="archive/report-2026-06-12.html" class="row"><span class="date">2026-06-12</span><span class="head">早上好</span><span class="stat">1 政策风向 2 人物 2 动态 0 工作笔记</span></a>
-<a href="archive/report-2026-06-11.html" class="row"><span class="date">2026-06-11</span><span class="head">随便看看</span><span class="stat">1 政策风向 2 人物 2 动态 0 工作笔记</span></a>
-<a href="archive/report-2026-06-10.html" class="row"><span class="date">2026-06-10</span><span class="head">速览</span><span class="stat">1 政策风向 2 人物 2 动态 0 工作笔记</span></a>
-<a href="archive/report-2026-06-09.html" class="row"><span class="date">2026-06-09</span><span class="head">简报</span><span class="stat">1 政策风向 2 人物 2 动态 0 工作笔记</span></a>
-<a href="archive/report-2026-06-08.html" class="row"><span class="date">2026-06-08</span><span class="head">日报</span><span class="stat">0 政策风向 2 人物 2 动态 0 工作笔记</span></a>
-<a href="archive/report-2026-06-07.html" class="row"><span class="date">2026-06-07</span><span class="head">晨报</span><span class="stat">1 政策风向 2 人物 2 动态 0 工作笔记</span></a>
-<a href="archive/report-2026-06-06.html" class="row"><span class="date">2026-06-06</span><span class="head">早上好</span><span class="stat">0 政策风向 2 人物 2 动态 0 工作笔记</span></a>
-<a href="archive/report-2026-06-05.html" class="row"><span class="date">2026-06-05</span><span class="head">今天做的事</span><span class="stat">0 政策风向 2 人物 2 动态 0 工作笔记</span></a>
-<a href="archive/report-2026-06-04.html" class="row"><span class="date">2026-06-04</span><span class="head">随便看看</span><span class="stat">1 政策风向 2 动态 0 工作笔记</span></a>
-<a href="archive/report-2026-06-03.html" class="row"><span class="date">2026-06-03</span><span class="head">速览</span><span class="stat">1 政策风向 2 动态 1 工作笔记</span></a>
-<a href="archive/report-2026-06-02.html" class="row"><span class="date">2026-06-02</span><span class="head">晨报</span><span class="stat">2 权威声音 3 AI 趋势 0 对话淘金</span></a>
-<a href="archive/report-2026-06-01.html" class="row"><span class="date">2026-06-01</span><span class="head">信息聚合日报</span><span class="stat"></span></a>
+<header class="mh"><div class="d">13 期</div><h1>日报存档</h1></header>
+<a href="archive/report-2026-06-27.html" class="row today">
+    <span class="date">2026-06-27</span>
+    <span class="head">早上好</span>
+    <span class="stat">0 政策风向 2 人物 2 动态 0 工作笔记</span>
+  </a>
+<a href="archive/report-2026-06-24.html" class="row">
+    <span class="date">2026-06-24</span>
+    <span class="head">速览</span>
+    <span class="stat">0 政策风向 2 人物 2 动态 0 工作笔记</span>
+  </a>
+<a href="archive/report-2026-06-23.html" class="row">
+    <span class="date">2026-06-23</span>
+    <span class="head">简报</span>
+    <span class="stat">0 政策风向 2 人物 2 动态 0 工作笔记</span>
+  </a>
+<a href="archive/report-2026-06-19.html" class="row">
+    <span class="date">2026-06-19</span>
+    <span class="head">今天做的事</span>
+    <span class="stat">1 政策风向 2 人物 2 动态 0 工作笔记</span>
+  </a>
+<a href="archive/report-2026-06-18.html" class="row">
+    <span class="date">2026-06-18</span>
+    <span class="head">随便看看</span>
+    <span class="stat">1 政策风向 2 人物 2 动态 0 工作笔记</span>
+  </a>
+<a href="archive/report-2026-06-17.html" class="row">
+    <span class="date">2026-06-17</span>
+    <span class="head">速览</span>
+    <span class="stat">1 政策风向 2 人物 2 动态 0 工作笔记</span>
+  </a>
+<a href="archive/report-2026-06-14.html" class="row">
+    <span class="date">2026-06-14</span>
+    <span class="head">晨报</span>
+    <span class="stat">1 政策风向 2 人物 2 动态 0 工作笔记</span>
+  </a>
+<a href="archive/report-2026-06-13.html" class="row">
+    <span class="date">2026-06-13</span>
+    <span class="head">早上好</span>
+    <span class="stat">1 政策风向 2 人物 2 动态 0 工作笔记</span>
+  </a>
+<a href="archive/report-2026-06-12.html" class="row">
+    <span class="date">2026-06-12</span>
+    <span class="head">早上好</span>
+    <span class="stat">1 政策风向 2 人物 2 动态 0 工作笔记</span>
+  </a>
+<a href="archive/report-2026-06-11.html" class="row">
+    <span class="date">2026-06-11</span>
+    <span class="head">随便看看</span>
+    <span class="stat">1 政策风向 2 人物 2 动态 0 工作笔记</span>
+  </a>
+<a href="archive/report-2026-06-10.html" class="row">
+    <span class="date">2026-06-10</span>
+    <span class="head">速览</span>
+    <span class="stat">1 政策风向 2 人物 2 动态 0 工作笔记</span>
+  </a>
+<a href="archive/report-2026-06-09.html" class="row">
+    <span class="date">2026-06-09</span>
+    <span class="head">简报</span>
+    <span class="stat">1 政策风向 2 人物 2 动态 0 工作笔记</span>
+  </a>
+<a href="archive/report-2026-06-08.html" class="row">
+    <span class="date">2026-06-08</span>
+    <span class="head">日报</span>
+    <span class="stat">0 政策风向 2 人物 2 动态 0 工作笔记</span>
+  </a>
 <footer class="foot">每日自动生成 · <a href="today.html" style="color:inherit">今天</a></footer>
 </div></body></html>
